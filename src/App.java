@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) throws Exception {
         /**
@@ -11,5 +13,10 @@ public class App {
          * rain water(blue section in the leetcode question) are being trapped.
          */
         System.out.println("Hello, World!");
+        int[] height = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+        Solution solution = new Solution();
+        int rainWaterTrapped = solution.rainWaterTrapped(height);
+        System.out.println("The given heights are:" + Arrays.toString(height)
+                + " and the total rain water trapped in the valleys is: " + rainWaterTrapped);
     }
 }
